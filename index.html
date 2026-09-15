@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="uk" data-owner="<!-- Мамонтов Євген -->">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TODO: змініть title так, щоб містив ваше Прізвище, Ім'я та групу -->
+
+  <title>Lab1 — Мамонтов Євген, ІН-41/1</title>
+
+  <meta name="description" content="Лабораторна робота 1 — Налаштування середовища розробки: VS Code, Live Server, DevTools." />
+
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <script defer src="./scripts/main.js"></script>
+
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <!-- TODO: один унікальний емодзі + ваше ім'я та група -->
+
+    <h1>👾 Мамонтов Євген — група № ІН-41/1 </h1>
+
+    <p class="subtitle">Лабораторна робота №1 — Налаштування середовища розробки: VS Code, Live Server, DevTools</p>
+
+  </header>
+
+
+  <main>
+
+    <section class="card profile" id="profile">
+
+      <div class="avatar">
+
+        <!-- TODO: покладіть свій avatar.png у assets/img і додайте alt із ПІБ -->
+
+        <img src="./Asset/image/myfoto.jpg" width="220" height="300" alt="Аватар: Мамонтов Євген" />
+
+      </div>
+
+      <div class="info">
+
+        <!-- TODO: заповніть поля нижче, змініть колір і факт -->
+
+        <h2>Про мене</h2>
+
+        <ul>
+
+          <li><strong>ПІБ:</strong> Мамонтов Євген</li>
+
+          <li><strong>Група:</strong> група № ІН-41/1</li>
+
+          <li><strong>Мій унікальний колір-акцент:</strong> <span class="accent-preview">#b44cff</span></li>
+
+          <li><strong>Улюблений інструмент розробника:</strong> DevTools</li>
+
+          <li><strong>Fun fact:</strong> Моя улюблена домашня тваринка - кіт. Ну, і собаки також...</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+ 
+
+    <section class="card about" id="about">
+
+      <h2>Мій перший компонент UI</h2>
+
+      <p>
+
+        Цей компонент стилізовано моїм індивідуальним кольором-акцентом і містить мій унікальний ідентифікатор сторінки,
+
+        який генерується у <code>main.js</code> при завантаженні.
+
+      </p>
+
+      <div class="badge" id="pageIdBadge" title="Згенерований ID сторінки"></div>
+
+    </section>
+
+ 
+
+    <section class="card checklist" id="checklist">
+
+      <h2>Чекліст для перевірки</h2>
+
+      <ol>
+
+        <li>Документ має індивідуальний title із моїми ПІБ і групою.</li>
+
+        <li>Задано персональний колір-акцент (CSS змінна <code>--accent</code>).</li>
+
+        <li>Виводиться мій унікальний ідентифікатор сторінки (генерується у JS).</li>
+
+        <li>На сторінці є мій аватар або заглушка.</li>
+
+        <li>У консолі є персональне вітання.</li>
+
+      </ol>
+
+    </section>
+
+  </main>
+
+ 
+
+  <footer class="site-footer">
+
+    <small>&copy; <span id="currentYear"></span> — ЛР1, Клієнтські технології вебпрограмування.</small>
+
+  </footer>
+
+</body>
+
+</html>
