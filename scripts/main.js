@@ -1,9 +1,7 @@
-// TODO: налаштуйте власні дані
 const studentName = "Мамонтов Євген";
 const group = "ІН-41/1";
-const emoji = "👾"; // замініть на свій унікальний емодзі
+const emoji = "👾"; 
 
-// Проста генерація унікального ID сторінки (час + випадкова частина)
 function generatePageId() {
   const ts = new Date().toISOString().replace(/[-:.TZ]/g, "");
   const rnd = Math.random().toString(36).slice(2, 8).toUpperCase();
@@ -35,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setBadge(id);
   setAccentPreview();
 
-  // Зберегти ідентифікатор у localStorage як доказ унікальності сторінки для цього студента
   try {
     localStorage.setItem("lab1.pageId", id);
   } catch (_) {
