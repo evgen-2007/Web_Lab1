@@ -3,9 +3,7 @@
   --accent-glow: rgba(180, 76, 255, 0.6);
   --secondary-glow: rgba(76, 154, 255, 0.4);
   --bg: #050308;
-  /* Напівпрозорий базовий колір карток */
   --card: rgba(18, 11, 28, 0.65);
-  /* Повністю непрозорий колір при наведенні */
   --card-hover: rgba(24, 15, 38, 0.98);
   --card-border: rgba(180, 76, 255, 0.25);
   --text: #f3f0fb;
@@ -32,7 +30,6 @@ body {
   justify-content: space-between;
 }
 
-/* Шапка та Футер */
 .site-header {
   text-align: center;
   padding: 40px 16px 16px;
@@ -66,7 +63,6 @@ body {
   background: rgba(5, 3, 8, 0.5);
 }
 
-/* Основний контент */
 main {
   width: min(880px, 92%);
   margin: 16px auto 40px;
@@ -74,7 +70,6 @@ main {
   gap: 24px;
 }
 
-/* Картки */
 .card {
   background: var(--card);
   backdrop-filter: blur(16px);
@@ -88,7 +83,6 @@ main {
   overflow: hidden;
 }
 
-/* Неонова смужка-акцент зліва */
 .card::before {
   content: '';
   position: absolute;
@@ -102,7 +96,6 @@ main {
   transition: opacity 0.3s ease;
 }
 
-/* Стан при наведенні курсора: повна непрозорість та світіння */
 .card:hover {
   background: var(--card-hover);
   transform: translateY(-4px);
@@ -115,7 +108,6 @@ main {
   opacity: 1;
 }
 
-/* Профіль */
 .profile {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -147,7 +139,6 @@ main {
   text-shadow: 0 0 10px rgba(180, 76, 255, 0.3);
 }
 
-/* Списки */
 .info ul {
   list-style: none;
   padding: 0;
@@ -166,7 +157,6 @@ main {
   color: var(--text);
 }
 
-/* Бейдж */
 .badge {
   display: inline-block;
   margin-top: 12px;
@@ -200,7 +190,6 @@ main {
   box-shadow: 0 0 8px var(--accent-glow);
 }
 
-/* Чекліст */
 .checklist ol {
   margin: 0;
   padding-left: 20px;
@@ -218,7 +207,6 @@ main {
   font-weight: bold;
 }
 
-/* Адаптивність для мобільних пристроїв */
 @media (max-width: 650px) {
   .profile {
     grid-template-columns: 1fr;
